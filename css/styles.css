@@ -71,37 +71,55 @@ div.navbar-header {
 }
 /* END HEADER */
 
+/* HOME PAGE */
+.container .jumbotron {
+    box-shadow: 0 0 50px #111;
+    border: 2px solid #111;
+}
+/* HOME PAGE */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-    .jumbotron {
-        background: url('../assets/images/jumbotron/image-1200.jpg') no-repeat;
-        height: 675px;
-        box-shadow: 0 0 50px #000;
-        border: 2px solid #000;
+    .container .jumbotron {
+        background: url('../assets/images/jumbotron/image2-1200.png') no-repeat;
+        background-size: contain;
+        height: 400px;
     }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    .container .jumbotron {
+        background: url('../assets/images/jumbotron/image2-992.png') no-repeat;
+        background-size: contain;
+        height: 331px;
+    }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .container .jumbotron {
+        background: url('../assets/images/jumbotron/image2-768.png') no-repeat;
+        background-size: contain;
+        height: 256px;
+    }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 0px;
-    height: 60px;
-  }
-  .navbar-brand h1 { /* Company name */
-    padding-top: 10px;
-    /* font-size: 5vw; 1vw = 1% of viewport width */
-  }
-  /* End Header */
-
+    /* Header */
+    .navbar-brand {
+        padding-top: 0px;
+        height: 60px;
+    }
+    .navbar-brand h1 { /* Company name */
+        padding-top: 10px;
+        /* font-size: 5vw; 1vw = 1% of viewport width */
+    }
+    /* End Header */
+    .container .jumbotron {
+        background-color: #111;
+        margin-top: 30px;
+        padding: 0;
+    }
 }
