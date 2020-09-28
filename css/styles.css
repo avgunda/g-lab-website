@@ -67,7 +67,59 @@ div.navbar-header {
 }
 /* END HEADER */
 
+/* FOOTER */
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #111;
+	border-color: #333;
+}
+
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+
+#place, #contact, #quote {
+	line-height: 1.5;
+	color: #aaa;
+}
+
+#quote span#quote-author {
+	color: #555;
+}
+
+#quote span#quote-content {
+	font-style: italic;
+	font-size: 1.3em;
+	color: #aaa;
+}
+
+#place > span, #contact > span {
+	font-size: 1.3em;
+	color: #555;
+}
+
+.panel-footer div.text-center span {
+	color: #555;
+}
+/* END FOOTER */
+
 /* HOME PAGE */
+#categories-title {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#categories-title span {
+	font-size: 2.5em;
+}
+
+#categories-title hr {
+	width: 50%;
+	border-color: #333;
+}
+
 .container .jumbotron {
 	box-shadow: 0 0 50px #111;
 	border: 2px solid #111;
@@ -119,6 +171,56 @@ div.navbar-header {
 }
 /* END HOME PAGE */
 
+/* PRODUCTS LIST PAGE */
+#products-title {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.product-title {
+	position: relative;
+	border: 2px solid #111;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 40px auto;
+	border-radius: 10px;
+}
+
+.product-title span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: #111;
+	color: #eee;
+	opacity: 0.8;
+	padding-top: 3px;
+}
+
+.product-title:hover {
+	box-shadow: 0 1px 5px 1px #333;
+}
+/* END PRODUCTS LIST PAGE */
+
+/* STILL BUILDING PAGE */
+#still-building {
+	padding-top: 200px;
+	padding-bottom: 200px;
+	width: 100%;
+	height: 40vw;
+}
+
+#still-building span {
+	font-size: 3em;
+	color: #888;
+}
+/* END STILL BUILDING PAGE */
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron {
@@ -163,6 +265,8 @@ div.navbar-header {
 		/* font-size: 5vw; 1vw = 1% of viewport width */
 	}
 	/* End Header */
+	
+	/* Home Page */
 	.container .jumbotron {
 		background-color: #111;
 		margin-top: 30px;
@@ -175,4 +279,49 @@ div.navbar-header {
 		height: 200px;
 		margin: 0 auto 15px auto;
 	}
+	/* End Home Page */
+
+	/* Footer */
+	.panel-footer section {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0;
+	}
+
+	.panel-footer hr {
+		width: 50%;
+	}
+	/* End Footer */
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+	/* Header */
+	.navbar-brand h1 { /* Company name */
+		padding-top: 10px;
+		font-size: 8vw;
+	}
+	/* End Header */
+	
+	/* Home page */
+	#menu-tile, #specials-tile {
+		width: 30%;
+		height: 100px;
+		margin: 0 auto 15px;
+	}
+	/* End Home page */
+
+	/* Products list page */
+	.col-xxs-12 {
+		position: relative;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+	}
+	/* End Products list page */
 }
