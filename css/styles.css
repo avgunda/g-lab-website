@@ -1,125 +1,178 @@
 body {
-    font-size: 16px;
-    color: #eee;
-    background-color: #111;
-    font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	color: #eee;
+	background-color: #111;
+	font-family: 'Nunito', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-    background-color: #111;
-    border-radius: 0;
-    border: 0;
+	background-color: #111;
+	border-radius: 0;
+	border: 0;
 }
 
 #logo-img {
-    background: url('../assets/images/logos/logo-medium.png') no-repeat;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    margin: 10px 15px 10px 0;
+	background: url('../assets/images/logos/logo-medium.png') no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	margin: 10px 15px 10px 0;
 }
 
 .navbar-brand {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 .navbar-brand h1 {
-    font-family: 'Nunito', sans-serif;
-    color: #eee;
-    font-size: 2.0em;
-    /* text-transform: uppercase; */
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
+	font-family: 'Nunito', sans-serif;
+	color: #eee;
+	font-size: 2.0em;
+	/* text-transform: uppercase; */
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 #nav-list {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 #nav-list a {
-    color: #eee;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 1.2em;
-    margin-top: -5px;
+	color: #eee;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.2em;
+	margin-top: -5px;
 }
 #nav-list a:hover {
-    background: #222;
+	background: #222;
 }
 
 div.navbar-header {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #eee;
-}
-.navbar-header button.navbar-toggle {
-    /* height: 60px; */
-    /* clear: both; */
+	border: 1px solid #eee;
 }
 
 .navbar-nav li a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 /* END HEADER */
 
 /* HOME PAGE */
 .container .jumbotron {
-    box-shadow: 0 0 50px #111;
-    border: 2px solid #111;
+	box-shadow: 0 0 50px #111;
+	border: 2px solid #111;
 }
-/* HOME PAGE */
+
+#image-products-tile, #nlp-products-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 1px sold #eee;
+	overflow: hidden;
+}
+
+#image-products-tile:hover, #nlp-products-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #ccc;
+}
+
+#image-products-tile {
+	background: url('../assets/images/tiles/image-products-tile.png') no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#nlp-products-tile {
+	background: url('../assets/images/tiles/nlp-products-tile.png') no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#map-tile {
+	background: url('../assets/images/tiles/map-tile.png') no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#image-products-tile span, #nlp-products-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	background-color: #111;
+	color: #eee;
+	opacity: 0.8;
+	font-weight: 600;
+}
+/* END HOME PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-    .container .jumbotron {
-        background: url('../assets/images/jumbotron/image2-1200.png') no-repeat;
-        background-size: contain;
-        height: 400px;
-    }
+	.container .jumbotron {
+		background: url('../assets/images/jumbotron/image2-1200.png') no-repeat;
+		background-size: contain;
+		height: 500px;
+	}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .container .jumbotron {
-        background: url('../assets/images/jumbotron/image2-992.png') no-repeat;
-        background-size: contain;
-        height: 331px;
-    }
+	.container .jumbotron {
+		background: url('../assets/images/jumbotron/image2-992.png') no-repeat;
+		background-size: contain;
+		height: 414px;
+	}
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    .container .jumbotron {
-        background: url('../assets/images/jumbotron/image2-768.png') no-repeat;
-        background-size: contain;
-        height: 256px;
-    }
+	.container .jumbotron {
+		background: url('../assets/images/jumbotron/image2-768.png') no-repeat;
+		background-size: contain;
+		height: 320px;
+	}
+
+	#image-products-tile, #nlp-products-tile, #map-tile {
+		width: 60%;
+		margin: 0 auto 15px auto;
+	}
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-    /* Header */
-    .navbar-brand {
-        padding-top: 0px;
-        height: 60px;
-    }
-    .navbar-brand h1 { /* Company name */
-        padding-top: 10px;
-        /* font-size: 5vw; 1vw = 1% of viewport width */
-    }
-    /* End Header */
-    .container .jumbotron {
-        background-color: #111;
-        margin-top: 30px;
-        padding: 0;
-    }
+	/* Header */
+	.navbar-brand {
+		padding-top: 0px;
+		height: 60px;
+	}
+	.navbar-brand h1 { /* Company name */
+		padding-top: 10px;
+		/* font-size: 5vw; 1vw = 1% of viewport width */
+	}
+	/* End Header */
+	.container .jumbotron {
+		background-color: #111;
+		margin-top: 30px;
+		margin-bottom: 20vw;
+		padding: 0;
+	}
+
+	#image-products-tile, #nlp-products-tile, #map-tile {
+		width: 30%;
+		height: 200px;
+		margin: 0 auto 15px auto;
+	}
 }
