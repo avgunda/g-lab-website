@@ -1,0 +1,107 @@
+body {
+    font-size: 16px;
+    color: #eee;
+    background-color: #111;
+    font-family: 'Nunito', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #111;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('../assets/images/logos/logo-medium.png') no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #eee;
+    font-size: 2.0em;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 0px;
+}
+#nav-list a {
+    color: #eee;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    margin-top: -5px;
+}
+#nav-list a:hover {
+    background: #222;
+}
+
+div.navbar-header {
+    margin-top: 5px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #eee;
+}
+.navbar-header button.navbar-toggle {
+    /* height: 60px; */
+    /* clear: both; */
+}
+
+.navbar-nav li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .jumbotron {
+        background: url('../assets/images/jumbotron/image-1200.jpg') no-repeat;
+        height: 675px;
+        box-shadow: 0 0 50px #000;
+        border: 2px solid #000;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 0px;
+    height: 60px;
+  }
+  .navbar-brand h1 { /* Company name */
+    padding-top: 10px;
+    /* font-size: 5vw; 1vw = 1% of viewport width */
+  }
+  /* End Header */
+
+}
