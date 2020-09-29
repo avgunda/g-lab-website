@@ -21,7 +21,7 @@
 					<div class="navbar-brand">
 						<a href="index.html"><h1>Grapple Labs</h1></a>
 					</div>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -31,13 +31,13 @@
 				<div id="collapsable-nav" class="collapse navbar-collapse">
 					<ul id="nav-list" class="nav navbar-nav navbar-right">
 						<li>
-							<a href="products.html"><br class="hidden-xs"> Products</a>
+							<a href="#" onclick="$gl.loadProducts();"><br class="hidden-xs"> Products</a>
 						</li>
 						<li>
-							<a href="about.html"><br class="hidden-xs"> About</a>
+							<a href="#" onclick="$gl.loadWIP();"><br class="hidden-xs"> About</a>
 						</li>
 						<li>
-							<a href="contact.html"><br class="hidden-xs"> Contact Us</a>
+							<a href="#" onclick="$gl.loadWIP();"><br class="hidden-xs"> Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -45,31 +45,7 @@
 		</nav>
 	</header>
 
-	<div id="main-content" class="container">
-		<div class="jumbotron">
-			<img src="./assets/images/jumbotron/image2-768.png" alt="banner picture" class="img-responsive visible-xs">
-		</div>
-
-		<div id="categories-title" class="text-center">
-			<span>Categories</span>
-			<hr>
-		</div>
-		<div id="home-tiles" class="row">
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="products.html"><div id="image-products-tile"><span>Image based</span></div></a>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="products.html"><div id="nlp-products-tile"><span>NLP based</span></div></a>
-			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
-				<a href="" target="_blank">
-					<div id="map-tile">
-						<span>LOCATION BASED</span>
-					</div>
-				</a>
-			</div>
-		</div><!-- end of home tiles -->
-	</div><!-- end of main content-->
+	<div id="main-content" class="container"></div>
 	
 	<footer class="panel-footer">
 		<div class="container">
@@ -97,6 +73,7 @@
 	<!-- JScripts starts here -->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ajax-utils.js"></script>
 	<script src="js/script.js"></script>
 	<!-- JScripts end here -->
 </body>
